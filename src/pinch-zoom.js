@@ -148,7 +148,8 @@ var definePinchZoom = function () {
             onDragEnd: null,
             onDragUpdate: null,
             onDoubleTap: null,
-            onMouseWheel: null
+            onMouseWheel: null,
+            disableDoubleTap: false
         },
 
         /**
@@ -234,6 +235,10 @@ var definePinchZoom = function () {
          * @param event
          */
         handleDoubleTap: function (event) {
+
+            if(this.options.disableDoubleTap)
+                return;
+
             var center = this.getTouches(event)[0],
                 zoomFactor = this.zoomFactor > 1 ? 1 : this.options.tapZoomFactor,
                 startZoomFactor = this.zoomFactor,

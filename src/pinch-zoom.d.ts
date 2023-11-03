@@ -29,6 +29,7 @@ declare interface IPinchZoomOptions {
     dragUpdateEventName?: string;
     dragEndEventName?: string;
     doubleTapEventName?: string;
+    disableDoubleTap: boolean;
 }
 
 declare class PinchZoom {
