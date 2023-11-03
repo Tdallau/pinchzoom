@@ -1,3 +1,5 @@
+Fork of [PinchZoom.js](https://github.com/manuelstofer/pinchzoom.git)
+
 # PinchZoom.js
 
 PinchZoom is a Javascript library providing multi-touch gestures for zooming and dragging on any DOM element.
